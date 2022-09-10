@@ -1,0 +1,33 @@
+
+.nav-bar {
+  position: fixed;
+  margin-top: 1.5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 0;
+  z-index: 5;
+ 
+  
+}
+.nav-bar .icon {
+  margin-left: 2rem;
+  margin-right: 7rem;
+}
+
+.nav-bar .sections a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.nav-bar .sections a:hover {
+  color: brown;
+}
+.nav-bar .sections a.active {
+  color: #7671f0;
+}
