@@ -109,10 +109,11 @@
 
 .film-info .vote_average {
   font-size: 17px;
-  margin-left: 15.5vw;
+  margin-left: 16vw;
 }
 .first-trending .vote_average {
   font-size: 18px;
+   margin-left: 16.5vw;
    
 }
 
@@ -266,7 +267,7 @@ input {
 .inner-popular img {
   border-radius: 20px;
   object-fit: cover;
-  width: 10.5vw;
+  width: 11vw;
   height: 30vh;
 }
 
@@ -311,7 +312,7 @@ input {
 .inner-popular #popular-list li .title-rate .rating {
   position: absolute;
   font-weight: 600;
-  margin-left: 7.5vw;
+  margin-left: 8vw;
   font-size: 16px;
   color: #f0eeee;
 }
