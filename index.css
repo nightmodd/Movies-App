@@ -79,13 +79,13 @@
 }
 
 .inner-trending .film-title {
-  font-size: 19px;
+  font-size: 17px;
   left: 1.1vw;
   width: 80%;
 }
 .first-trending  .film-title{
-  font-size: 21px;
-  width: 80%;
+  font-size: 18px;
+ 
 }
 
 .trending .rank {
@@ -98,7 +98,7 @@
 }
 .first-trending .rank {
   color: gold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .background-vote {
@@ -108,11 +108,11 @@
 }
 
 .film-info .vote_average {
-  font-size: 20px;
-  margin-left: 17vw;
+  font-size: 17px;
+  margin-left: 15.5vw;
 }
 .first-trending .vote_average {
-  font-size: 22px;
+  font-size: 18px;
    
 }
 
@@ -302,7 +302,7 @@ input {
 
 .inner-popular #popular-list li .title-rate .movie-title {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 17px;
   color: #000;
   margin-bottom: 0px;
   width: 75%;
@@ -311,8 +311,8 @@ input {
 .inner-popular #popular-list li .title-rate .rating {
   position: absolute;
   font-weight: 600;
-  margin-left: 8.5vw;
-  font-size: 17px;
+  margin-left: 7.5vw;
+  font-size: 16px;
   color: #f0eeee;
 }
 .relase-date {
