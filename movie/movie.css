@@ -1,1 +1,176 @@
+* {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
 
+/*Poster Section*/
+.whole-page {
+  width: 95%;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.whole-page .film img {
+  width: 100%;
+  height: 70vh;
+  border-radius: 15px;
+  box-shadow: #7571f0;
+}
+
+.shadow-img {
+  position: absolute;
+  margin-top: 60vh;
+  top: 0;
+  width: 95%;
+  height: 20vh;
+  border-radius: 20px;
+  box-shadow: inset 0px -25px 200px rgb(31, 30, 30);
+}
+
+.film-info {
+  position: absolute;
+  height: 6vw;
+  top: 65.5vh;
+  left: 5vw;
+  color: rgb(240, 237, 237);
+}
+
+#film-title {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 66px;
+}
+
+.category {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.film-info ul li {
+  margin-left: 10px;
+}
+/*just for the first list item*/
+.category > ul:nth-child(1) > li:nth-child(1) {
+  margin-left: 0px;
+}
+
+/*overview section*/
+
+.section {
+  background-color: white;
+  margin: auto;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
+  border: 12px double #7571f0;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+}
+.overview {
+  width: 70%;
+}
+
+.section-title {
+  padding: 5px;
+  font-size: 38px;
+  font-weight: 900;
+  background-color: #7571f0;
+  border-radius: 15px;
+}
+
+p {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+/*End of overview section*/
+
+/*Video section*/
+.video {
+  width: 50%;
+  margin: auto;
+}
+iframe {
+  border-radius: 20px;
+  margin-top: 5vh;
+}
+/*End of video seciotn*/
+
+/*Realated Section*/
+
+.related {
+  width: 70%;
+}
+.scroll-films {
+  margin: 5vh 0;
+  background-color: rgb(38, 37, 37);
+  border-radius: 20px;
+  padding: 3rem;
+  overflow: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scroll-films::before {
+  position: relative;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 150px;
+  background-image: linear(90deg, black, transparent);
+}
+
+.scrollable-film {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.scrollable-film img {
+  border-radius: 15px;
+  object-fit: cover;
+  width: 10vw;
+  height: 28vh;
+  margin-bottom: 2vh;
+}
+
+.scroll-films ul li span {
+  color: white;
+  font-size: 18px;
+  width: auto;
+}
+
+.button {
+  position: relative;
+  padding: 10px;
+  margin-right: 15px;
+  width: 70px;
+  height: auto;
+  background-color: #7571f0;
+  border-radius: 20px;
+}
+
+.left-button {
+  transform: rotate(90deg);
+}
+
+.right-button {
+  transform: rotate(-90deg);
+}

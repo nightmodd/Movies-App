@@ -1,17 +1,20 @@
-
 /*Trending Section*/
+#list,
+#skeleton-list {
+  padding-left: 0px;
+}
+
 .trending {
-   
   margin-top: 6rem;
   position: fixed;
-  width: 21vw;
+  width: 22vw;
   height: calc(100% - 6.5rem);
   overflow: hidden;
   padding: 0 8px;
   margin-left: 20px;
-  box-shadow: 0px 0px 20px 2px #aaaaaa;
+  box-shadow: 0px 0px 20px 2px #a19d9d;
   border-radius: 25px;
-  background-color: rgb(4, 4, 4);
+  background-color: rgb(38, 37, 37);
 }
 
 .first-trending {
@@ -23,7 +26,7 @@
 .inner-trending {
   overflow: auto;
   margin-top: 1.5rem;
-  height: 65%;
+  height: 63%;
 
   /*to make scroll hidden in broswers*/
   -ms-overflow-style: none; /* IE and Edge */
@@ -35,8 +38,8 @@
   left: 20px;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  color: #968989;
+  font-size: 18px;
+  color: #9d6767;
   margin-left: 16px;
 }
 
@@ -50,10 +53,11 @@
   max-width: 95%;
   display: block;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 20px;
   z-index: 1;
 }
 .first-trending a img {
+  border-radius: 20px;
   position: relative;
   max-width: 100%;
   overflow: hidden;
@@ -65,32 +69,67 @@
 
 .trending span {
   position: absolute;
-  font-size: 16px;
   font-weight: 400;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   left: 12px;
-  bottom: 12px;
+  bottom: 13px;
   font-style: italic;
   z-index: 2;
- 
 }
 
-.inner-trending span {
-  font-size: 14px;
-  left: 1.2vw;
-  color: white;
+.inner-trending .film-title {
+  font-size: 19px;
+  left: 1.1vw;
+  width: 80%;
+}
+.first-trending  .film-title{
+  font-size: 21px;
+  width: 80%;
 }
 
-.first-trending .rank{
-  margin-left: 18vw;
+.trending .rank {
+  z-index: 5;
+  font-size: 17px;
+  top: 0;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  color: rgb(255, 60, 0);
+}
+.first-trending .rank {
   color: gold;
-}
-.rank {
-  margin-left: 16.5vw;
-  
+  font-size: 20px;
 }
 
+.background-vote {
+  background-color: #7571f0;
+  border-radius: 10px;
+  padding: 0.4rem;
+}
+
+.film-info .vote_average {
+  font-size: 20px;
+  margin-left: 17vw;
+}
+.first-trending .vote_average {
+  font-size: 22px;
+   
+}
+
+.shadow-trending {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 96%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 2;
+  box-shadow: inset 0px -36px 25px rgba(0, 0, 0, 0.8);
+}
+.shadow-first-trending {
+  width: 100%;
+  left: 0;
+}
 .shadow-div {
   position: absolute;
   top: 0;
@@ -101,11 +140,12 @@
   box-shadow: inset 0px -36px 25px rgba(0, 0, 0, 0.7);
 }
 
+
 /*Trending Section*/
 
 /*search Section*/
 .search {
-   margin-top: 6rem;
+  margin-top: 6rem;
   position: fixed;
   right: 20px;
   overflow: hidden;
@@ -114,7 +154,6 @@
   box-shadow: 0px 0px 20px 10px #aaaaaa;
   background: #7671f0;
   border-radius: 40px;
-  
 }
 input {
   font-family: "Roboto", sans-serif;
@@ -174,108 +213,112 @@ input {
 .middle-section {
   width: 50%;
   flex-direction: column;
-  margin: auto;
-  
+  margin-left: 24vw;
 }
 
 .recommended-section {
-    display: flex;
-    padding-top: 5rem;
-    width: auto;
-    margin-bottom: 3rem;
-   
-   
+  display: flex;
+  padding-top: 5rem;
+  width: auto;
+  margin-bottom: 3rem;
 }
 .title {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-size: 48px;
-    font-weight: 900;
-    color: black;
-    margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 16px;
 }
 
-#latest
-{
+#latest {
   position: relative;
 }
 #latest > a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #latest > a > img {
-    box-shadow: inset 0px -36px 25px rgba(0, 0, 0, 0.4);
-    filter: drop-shadow(0px 12px 0px rgba(0, 0, 0, 0.1))
-        drop-shadow(0px 6px 0px rgba(0, 0, 0, 0.2));
-    border-radius: 20px;
-    object-fit: fill;
-    width: 49vw;
-    height: 45vh;
-  ;
+  box-shadow: inset 0px -36px 25px rgba(0, 0, 0, 0.4);
+  filter: drop-shadow(0px 12px 0px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 6px 0px rgba(0, 0, 0, 0.2));
+  border-radius: 20px;
+  object-fit: fill;
+  width: 50vw;
+  height: 45vh;
 }
 /*Recommended section*/
 
-
 /*popular section*/
-
-.inner-popular {
-  padding-left: 1rem;
+.inner-popular{
+  margin-left: 1vw;
 }
 .inner-popular ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap:  2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-column-gap: 2rem;
   justify-items: auto;
 }
 .inner-popular ul li {
   list-style: none;
   max-width: min-content;
-
 }
 .inner-popular img {
   border-radius: 20px;
   object-fit: cover;
   width: 10.5vw;
-  height: 28vh;
+  height: 30vh;
 }
-.inner-popular .film-info{
- margin-bottom: 3rem ;
- display: block;
+
+.inner-popular .film-info {
+  margin-bottom: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: block;
+  padding-left: 6px;
 }
-.inner-popular  .title-rate {
+
+.inner-popular .title-rate {
   margin-top: 12px;
   margin-bottom: 5px;
-  padding-left: 6px;
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-between;
+}
+#popular-list  li{
+ transition: transform 1s;
+}
+#popular-list li:hover{
+  transform: scale(1.2);
+  z-index: 2;
   
 }
-.inner-popular #popular-list li .title-rate .title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
+#popular-list  li a {
+    text-decoration: none;
+   
+}
+
+
+
+
+.inner-popular #popular-list li .title-rate .movie-title {
+  font-weight: 800;
+  font-size: 18px;
   color: #000;
   margin-bottom: 0px;
+  width: 75%;
 }
-
-
 
 .inner-popular #popular-list li .title-rate .rating {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  color: #6e6b6b;
-  padding-right: 0.5rem;
+  position: absolute;
+  font-weight: 600;
+  margin-left: 8.5vw;
+  font-size: 17px;
+  color: #f0eeee;
 }
-.catagories {
-  padding-left: 4px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #6e6b6b;
+.relase-date {
+  font-size: 15px;
+  font-weight: 500;
+  color: #968989;
 }
 
 /*Popular Section*/
